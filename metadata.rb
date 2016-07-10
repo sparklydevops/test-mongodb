@@ -6,5 +6,7 @@ description 'Installs/Configures test-mongodb'
 long_description 'Installs/Configures test-mongodb'
 version '0.3.1'
 
-source_url = 'https://github.com/sparklydevops/test-mongodb'
-issues_url = 'https://github.com/sparklydevops/test-mongodb/issues'
+supports 'centos'
+
+source_url 'https://github.com/sparklydevops/test-mongodb'
+issues_url 'https://github.com/sparklydevops/test-mongodb/issues'
