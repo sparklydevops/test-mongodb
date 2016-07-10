@@ -1,4 +1,5 @@
 # test-mongodb
 
-TODO: Enter the cookbook description here.
+MongoDB install cookbook
 
+* Basic recipe to install mongodb.

@@ -1,7 +1,10 @@
 name 'test-mongodb'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
+maintainer 'Sparkly Devops'
+maintainer_email 'sparklydevops@gmail.com'
+license 'Apache 2'
 description 'Installs/Configures test-mongodb'
 long_description 'Installs/Configures test-mongodb'
-version '0.1.0'
+version '0.2.0'
+
+source_url = "https://github.com/sparklydevops/test-mongodb"
+issues_url = "https://github.com/sparklydevops/test-mongodb/issues"
