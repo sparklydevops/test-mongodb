@@ -4,24 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 #
-baseurl = "http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/"
 
-if node["kernel"]["machine"] != "x86_64"
-  baseurl = "http://downloads-distro.mongodb.org/repo/redhat/os/i686/"
-end
-
-template "/etc/yum.repos.d/mongodb.repo"  do
-  variables(
-    :baseurl => baseurl
-  )
-end
-
-package "mongodb-org" do
+mongodb_install 'default' do
   action :install
-end
-
-# Start MongoDB.
-# # ensure that MongoDB will start following a system reboot
-service "mongod" do
-  action [:start, :enable]
 end
